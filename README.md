@@ -1,7 +1,9 @@
 # RetrofitOKHttpCache
 测试Demo，使用Retrofit和Okhttp实现网络缓存。无网读缓存，有网根据过期时间重新请求。
 
-##代码片段：
+## 代码片段：
+```java
+
     public static OkHttpClient defaultOkHttpClient() {
         OkHttpClient.Builder client = new OkHttpClient.Builder();
         client.writeTimeout(30 * 1000, TimeUnit.MILLISECONDS);
@@ -66,3 +68,5 @@
             return response;
         }
     };
+    
+```
